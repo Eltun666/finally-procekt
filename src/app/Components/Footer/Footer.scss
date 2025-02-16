@@ -1,0 +1,110 @@
+footer{
+    .footer-One{
+        padding: 30px;
+        margin: 30px auto;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .text{
+            width: 50%;
+            h4{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .sosical-btns{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            width: 300px;
+            .sosical-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid white;
+                transition: .8s;
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+    }
+    .footer-two{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        .game-logo{          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: rgb(82, 82, 82);
+            cursor: pointer;
+            transition: 1s;
+            border-radius: 10px;
+            img{              
+                filter: grayscale(100%);
+            }
+            &:hover{
+                color: white;
+            }
+        }
+        .game-logo0{
+            width: 180px;
+            height: 70px;
+            img{
+                width: 30px;
+                height: 45px;
+            }
+        }
+        .game-logo1{
+            width: 340px;
+            height: 70px;
+            img{
+                width: 60px;
+                height: 40px;
+            }
+        }
+        .game-logo2{
+            width: 250px;
+            height: 70px;
+            img{
+                margin-right: 5px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .game-logo3{
+            width: 260px;
+            height: 70px;
+            img{
+                width: 60px;
+                height: 40px;
+            }
+        }
+        .game-logo4{
+            width: 260px;
+            height: 70px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .footer-there{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

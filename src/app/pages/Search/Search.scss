@@ -1,0 +1,166 @@
+.form-button-boxs{
+    .form-box{
+            width: 100%;
+            display: flex;
+            justify-content: center;       
+        form{
+            background-color: red;
+            position: relative;
+            border-radius: 22px;
+            border: 2px solid blue;
+            input{
+                padding: 12px 17px;
+                width: 550px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                transition: .5s;
+                &:focus{
+                    background-color: black;
+                    color: lavender;
+                }
+            }            
+            .search-btn{
+                padding: 10px 20px;
+                border-radius: 20px;
+                border: none;
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: blue;
+                border: 2px solid blue;
+                color: lavender;
+                transition: .5s;
+                cursor: pointer;
+                svg{
+                    font-size: 20px;
+                }
+                &:hover{
+                    background-color: black;
+                    color: lavender;
+                    border: 2px solid blue;
+                }
+            }
+        }
+    }
+    .filter-btn-boxs{
+        .filter-btn{
+            width: 70%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: flex-end;
+            button{
+                margin-top: 30px;
+                padding: 15px 30px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                border: 2px solid lavender;
+                border-radius: 20px;
+                font-size: 16px;
+                transition: .4s;
+                background-color: transparent;
+                color: lavender;
+                .svg{
+                    transform: rotate(120deg);
+                    animation: startbaranimation 1s forwards;
+                }
+                .svg1{
+                    transform: rotate(60deg);
+                    animation: endbaranimation 1s forwards;
+                }
+                &:hover{
+                    background-color: black;
+                    border: 2px solid blue;
+                    color: lavender;
+                    box-shadow: 0 0 20px blue;
+                }
+            }
+        }
+        .ather-filter-btns{
+            display: flex;
+            gap: 30px;
+            width: 50%;
+            margin: 0 auto;
+            button{
+                padding: 15px 30px;
+                border-radius: 10px;
+                height: 50px;
+                background-color: black;
+                color: lavender;
+                border: 2px solid blue;
+                cursor: pointer;
+                transition: .5s;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                position: relative;
+                animation: startfilterBtn 1s forwards;
+                .boll{
+                    background-color: blue;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px blue;
+                    display: none;
+                }
+                &:hover{
+                    box-shadow: 0 0 20px blue;
+                }
+            }
+            .btns{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+.data{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .loading-box{
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+::-webkit-input-placeholder{
+    color: black;
+}
+
+@keyframes endbaranimation {   
+    from{
+        transform: rotate(60deg);
+    }to{
+        transform: rotate(-120deg);
+    }
+}
+@keyframes startbaranimation {
+    from{
+        transform: rotate(-120deg);
+    }to{
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes startfilterBtn {
+    from{
+        bottom: -60px;
+        opacity: 0;
+    }to{
+        bottom: 0;
+    }
+}

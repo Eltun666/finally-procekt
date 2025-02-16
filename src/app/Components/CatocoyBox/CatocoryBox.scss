@@ -1,0 +1,185 @@
+.catacory-boxs{
+   display: flex;
+   margin-top: 30px;
+   justify-content: center;
+   gap: 20px;
+   .catacory-box{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    .in-catacory-box{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.782);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+         font-size: 40px;
+         span{
+            color: lavender;
+            filter: drop-shadow(0 0 10px black);
+         }
+         .span1{
+            animation: texttransform 2.3s infinite;
+         }
+         .span2{
+            animation: texttransform 2.3s .1s infinite;
+         }
+         .span3{
+            animation: texttransform 2.3s .2s infinite;
+         }
+         .span4{
+            animation: texttransform 2.3s .3s infinite;
+         }
+         .span5{
+            animation: texttransform 2.3s .4s infinite;
+         }
+         .span6{
+            animation: texttransform 2.3s .5s infinite;
+         }
+         .span7{
+            animation: texttransform 2.3s .6s infinite;
+         }
+         .span8{
+            animation: texttransform 2.3s .7s infinite;
+         }
+         .span9{
+            animation: texttransform 2.3s .8s infinite;
+         }
+         
+      }
+      .hover-box{
+         display: none;       
+         background-color: black;
+         position: relative;
+         overflow: hidden;
+         animation: opocity 2s forwards;
+         .hover-in-box{
+            position: relative;
+            padding: 30px;
+            img{
+               width: 125px;
+               height: 100px;
+               filter: drop-shadow(0 0 10px white);
+            }
+            &::after{
+               content: "";
+               position: absolute;
+               top: 100%;
+               left: 0;
+               width: 5px;
+               height: 100%;
+               background-color: lavender;  
+               animation: leftbox 1.5s forwards;            
+            }
+            &::before{
+               content: "";
+               position: absolute;
+               bottom: 0;
+               right: 0;
+               width: 5px;
+               height: 100%;
+               background-color: lavender;
+               animation: rightbox 1.5s forwards;
+            }
+         }
+         &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: lavender;
+            animation: topbox 1.5s forwards;
+         }
+         &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background-color: lavender;
+            animation: bottombox 1.5s forwards;
+
+         }
+      }
+      &:hover{
+         p{
+            display: none;
+         }
+         .hover-box{
+            display: block;
+         }
+      }
+    }
+   } 
+   .catacory-boxOne{
+    background-image: url("https://www.10wallpaper.com/wallpaper/1280x800/1107/Assassin_Creed_Brotherhood_Wallpaper_06_1280x800.jpg");
+   }
+   .catacory-boxTwo{
+      background-image: url("https://www.michaelwhelan.com/wp-content/uploads/destinysroad.jpg");
+   }
+   .catacory-boxThere{
+      background-image: url("https://wallpapers.com/images/hd/shooting-game-1920-x-1080-wallpaper-svachy8i0xwbtji5.jpg");
+   }
+   .catacory-boxFour{
+      background-image: url("https://3.bp.blogspot.com/-nvmEhQMM1QA/V0gEVhujbeI/AAAAAAAAAGM/01dPiPjRKtwdtA1rMwuBbFFZowwybxjOgCLcB/s1600/264878.jpg");
+   }
+}
+
+@keyframes texttransform {
+   0%{
+      transform: translateY(0px);
+      display: inline-block;
+      color: lavender;
+   }50%{
+      transform: translateY(-15px);
+      display: inline-block;
+      opacity: 0;
+   }100%{
+      transform: translateY(0px);
+      display: inline-block;
+      color: lavender;
+   }
+}
+@keyframes opocity {
+   from{
+      opacity: 0;
+   }to{
+      opacity: 1;
+   }
+}
+@keyframes topbox {
+   from{
+      left: -100%;
+   }to{
+      left: 0;
+   }
+}
+@keyframes bottombox {
+   from{
+      right: -100%;
+   }to{
+      right: 0;
+   }
+}
+@keyframes leftbox{
+   from{
+      top: 100%;
+   }to{
+      top: 0;
+   }
+}
+@keyframes rightbox{
+   from{
+      bottom: 100%;
+   }to{
+      bottom: 0;
+   }
+}
