@@ -47,10 +47,9 @@ export const searchSlice = createSlice({
       state.searchQuery = action.payload;
     },
     searcfunc: (state, action: PayloadAction<Game[]>) => {
-      // Burada searchQuery'yi doğru şekilde state üzerinden alıyoruz.
       const query = state.searchQuery.toLowerCase();
       state.SearchData = action.payload.filter((item) => 
-        item.name.toLowerCase().includes(query) // case-insensitive arama
+        item.name.toLowerCase().includes(query) 
       );
     }
   },

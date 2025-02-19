@@ -10,7 +10,7 @@
 body{
     background-color: black;
     color: white;
-    background-image: url("https://wallpaperaccess.com/full/1811528.jpg");   
+    background-image: url("https://th.bing.com/th/id/R.413c8878f5c68b79c589f1d314429ab8?rik=ikTbRTHIOIepEg&riu=http%3a%2f%2fpapers.co%2fwallpaper%2fpapers.co-vp79-lg-g-flex-dark-bw-line-gray-pattern-black-41-iphone-wallpaper.jpg&ehk=snvDpbV0hRHGN8tTRnEAkdYQtDWF9IgjCyr4pP3xyL4%3d&risl=&pid=ImgRaw&r=0");   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -267,4 +267,30 @@ main{
     }to{
         transform: rotate(0);
     }
+}
+
+/* Custom scrollbar track (background) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 6px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #000000; /* Light gray background */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #0008ff;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lavender; /* Darker gray when hovered */
+}
+
+/* Scrollbar corner (where horizontal and vertical scrollbars meet) */
+::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Matching the track background */
 }

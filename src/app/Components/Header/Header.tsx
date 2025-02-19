@@ -37,10 +37,10 @@ const Header = () => {
         <div className="header-log-box headbox"><span><BsPerson /></span>
           <div className='in-log-box'>
               <div className='register-box reg-log-box'>
-                <Link href={""}><span className='reg-box'>REGIDTER</span></Link>
+                <a href={"/pages/Register"}><span className='reg-box'>REGISTER</span></a>
               </div>
               <div className='login-box reg-log-box'>
-                <Link href={""}><span className='log-box'>LOG IN</span></Link>
+                <Link href={"/pages/Login"}><span className='log-box'>LOG IN</span></Link>
               </div>
           </div>
         </div>
